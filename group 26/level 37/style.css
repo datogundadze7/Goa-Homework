@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 10px; /* Space between grid items */
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #4CAF50; /* Green background for grid items */
+    color: white; /* White text color */
+    padding: 20px;
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Rounded corners */
+}
