@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    overflow: hidden; /* რომ არ გაწვდოს გადახვევის ზოლები */
+}
+
+.moving-box {
+    position: absolute;
+    width: 100px; /* ყუთის სიგრძე */
+    height: 100px; /* ყუთის სიმაღლე */
+    background-color: #3498db; /* ყუთის ფერი */
+    animation: move 3s linear infinite; /* ანიმაციის გამოყენება */
+}
+
+@keyframes move {
+    0% {
+        left: 0; /* მარცხნიდან */
+    }
+    50% {
+        left: calc(100% - 100px); /* მარჯვნივ */
+    }
+    100% {
+        left: 0; /* ისევ მარცხნიდან */
+    }
+}

@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    overflow: hidden; /* რომ არ გაწვდოს გადახვევის ზოლები */
+    background-color: #f0f0f0; /* ფონური ფერი */
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%; /* ბურთის ფორმისთვის */
+    opacity: 0.7; /* გამჭვირვალობა */
+    animation: float 5s infinite ease-in-out; /* ანიმაცია */
+}
+
+.bubble1 {
+    width: 60px;
+    height: 60px;
+    background-color: #ff4757; /* წითელი */
+    animation-duration: 6s; /* თითოეული ბუშტის დრო */
+}
+
+.bubble2 {
+    width: 40px;
+    height: 40px;
+    background-color: #1e90ff; /* ლურჯი */
+    animation-duration: 4s; 
+}
+
+.bubble3 {
+    width: 50px;
+    height: 50px;
+    background-color: #2ed573; /* მწვანე */
+    animation-duration: 5s; 
+}
+
+.bubble4 {
+    width: 70px;
+    height: 70px;
+    background-color: #ffb142; /* ყვითელი */
+    animation-duration: 7s; 
+}
+
+.bubble5 {
+    width: 30px;
+    height: 30px;
+    background-color: #3742fa; /* მუქი ლურჯი */
+    animation-duration: 3s; 
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* დასაწყისი */
+    }
+    50% {
+        transform: translateY(-100vh); /* 50% - შორს ზემოთ */
+    }
+    100% {
+        transform: translateY(0); /* უკან დაბრუნება */
+    }
+}
