@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            width: 350px;
+        }
+        .container h1 {
+            font-family: 'Billabong', cursive;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .container form input {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background: #fafafa;
+        }
+        .container form input[type="submit"] {
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .container form input[type="submit"]:hover {
+            background-color: #007bb5;
+        }
+        .login {
+            margin-top: 20px;
+        }
+        .login a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+        .login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram</h1>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Sign Up">
+        </form>
+        <div class="login">
+            <p>Have an account? <a href="#login">Log in</a></p>
+        </div>
+    </div>
+    <!-- Log in form -->
+    <div class="container" id="login-form" style="display: none;">
+        <h1>Instagram</h1>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Log In">
+        </form>
+        <div class="login">
+            <p>Don't have an account? <a href="#signup">Sign up</a></p>
+        </div>
+    </div>
+
+    <script>
+        const signupForm = document.querySelector('.container');
+        const loginForm = document.getElementById('login-form');
+        const loginLink = document.querySelector('.login a[href="#login"]');
+        const signupLink = document.querySelector('.login a[href="#signup"]');
+
+        loginLink.addEventListener('click', () => {
+            signupForm.style.display = 'none';
+            loginForm.style.display = 'block';
+        });
+
+        signupLink.addEventListener('click', () => {
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
