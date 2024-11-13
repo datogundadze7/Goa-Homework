@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Summary</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to CSS -->
+</head>
+<body>
+    <div class="results-summary">
+        <h1>Results Summary</h1>
+        
+        <!-- Input fields for subject and score -->
+        <div class="input-fields">
+            <input type="text" id="subjectInput" placeholder="Subject" required>
+            <input type="number" id="scoreInput" placeholder="Score" required>
+            <button id="addResultButton">Add Result</button>
+        </div>
+
+        <!-- Display results list -->
+        <div id="resultsList" class="results-list"></div>
+
+        <!-- Display average score -->
+        <div class="average-score">
+            Average Score: <span id="averageScore">0</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>  <!-- Link to JavaScript -->
+</body>
+</html>

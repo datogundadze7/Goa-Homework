@@ -1,0 +1,119 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Results summary container */
+.results-summary {
+    background-color: #fff;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.results-summary:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Input fields styling */
+.input-fields {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #4CAF50;
+    background-color: #e8f7e8;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3c8c40;
+}
+
+/* Results list and individual result styles */
+.results-list {
+    margin: 20px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.result-title {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.result-score {
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+.result:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Average score section */
+.average-score {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 20px;
+}
+
+.average-score span {
+    color: #4CAF50;
+}
